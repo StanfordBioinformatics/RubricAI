@@ -1,0 +1,36 @@
+# Secrets and provider credentials
+.env
+*.env
+llm-compare.env
+*.pem
+*.key
+credentials*.json
+*service-account*.json
+
+# Research inputs and generated artifacts
+input/**
+!input/README.md
+output/
+data/
+
+# Python and Jupyter
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+
+# Editors and operating systems
+.DS_Store
+.Rhistory
+.idea/
+.vscode/
+*.swp
+
+# Temporary files
+*.tmp
+*.log
+*.inspect.ndjson
+~$*.xlsx
