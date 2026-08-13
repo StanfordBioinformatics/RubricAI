@@ -1,36 +1,28 @@
-# Secrets and provider credentials
+# Credentials and local environment files
 .env
 *.env
-llm-compare.env
-*.pem
-*.key
-credentials*.json
+!.env.example
 *service-account*.json
+*credentials*.json
 
-# Research inputs and generated artifacts
-input/**
+# Study data and generated artifacts
+input/*
 !input/README.md
+!input/Responses_clean.xlsx
+!input/question_info.csv
+!input/course_folder/
+!input/course_folder/Module_1/
+!input/course_folder/Module_1/module_content.ipynb
 output/
-data/
 
-# Python and Jupyter
-__pycache__/
-*.py[cod]
+# Python and Jupyter artifacts
 .venv/
 venv/
+__pycache__/
+*.py[cod]
 .ipynb_checkpoints/
-.pytest_cache/
-.mypy_cache/
 
-# Editors and operating systems
+# Operating-system and editor files
 .DS_Store
-.Rhistory
 .idea/
 .vscode/
-*.swp
-
-# Temporary files
-*.tmp
-*.log
-*.inspect.ndjson
-~$*.xlsx
